@@ -11,7 +11,6 @@ describe('TextChanger', function(){
     );
 
     describe('#changeText(element, text)', function() {
-
         it('should replace the content of the element with given text', function() {
             textChanger().replaceText(element, "test");
 
@@ -23,6 +22,5 @@ describe('TextChanger', function(){
                 textChanger().replaceText(null, "test")
             }, /DOM element/);
         });
-
     });
 });
