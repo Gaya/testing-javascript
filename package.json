@@ -1,0 +1,24 @@
+{
+  "name": "testing-case",
+  "version": "1.0.0",
+  "description": "Demonstration on how to test JavaScript using BrowserSync, Mocha and PhantomJS",
+  "main": "src/text-changer.js",
+  "scripts": {
+    "postinstall": "node ./node_modules/gulp/bin/gulp.js browserify",
+    "test": "node ./node_modules/mocha-phantomjs/bin/mocha-phantomjs test/tests.html"
+  },
+  "author": "Gaya Kessler",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-mocha-phantomjs": "^0.5.3",
+    "mocha": "^2.2.1",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.16",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.3.0"
+  }
+}
